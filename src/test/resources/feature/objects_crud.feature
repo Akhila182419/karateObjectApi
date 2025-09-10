@@ -1,4 +1,4 @@
-Feature:Feature: CRUD operations on objects resource
+Feature:CRUD operations on objects resource
 
   Background:
     * url baseUrl
