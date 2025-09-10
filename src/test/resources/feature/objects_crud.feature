@@ -1,33 +1,25 @@
-Feature: CRUD operations on objects resource
+Feature:Feature: CRUD operations on objects resource
 
   Background:
     * url baseUrl
-    * def requestBody = { data: { name: 'TestObject', value: '123' } }
-    * def createdId = 1
+    * def requestBody =  {id:'1', name: 'Apple mac Book Pro 16', data :{color:'Cloudy White',capacity:'128 GB'}}
 
-
-  Scenario: Create a new object
+  Scenario: Post -> get by id -> delete
     Given path 'objects'
     And request requestBody
     When method post
     Then status 200
-    And match response contains { id: '#string', data: '#object' }
-
-
-  Scenario: Read the created object
-    Given path 'objects', createdId
+    And match response contains { id:'#string',name:'#string',data:'##object'}
+   * def name = response.name
+    * def id = response.id
+    
+   # GET by ID
+    Given path 'objects', id
     When method get
     Then status 200
-    And match response.id != createdId
-    And match response.name == 'Google Pixel 6 Pro'
-    And match response.data.value == '128 GB'
-
-  Scenario: Delete the object
-    Given path 'objects', createdId
+    And match response.name == name
+    
+      # DELETE
+    Given path 'objects' ,id
     When method delete
-    Then status 200
-
-  Scenario: Cleanup
-    Given path 'objects', createdId
-    When method get
     Then status 200
