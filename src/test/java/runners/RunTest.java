@@ -6,6 +6,7 @@ public class RunTest {
 
     @Karate.Test
     Karate testObjectsCrud() {
-        return Karate.run("classpath:feature/objects_crud.feature");
+        return Karate.run("classpath:feature/object1.feature");
     }
+
 }
