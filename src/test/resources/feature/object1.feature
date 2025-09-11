@@ -5,7 +5,7 @@ Feature:Feature: CRUD operations on objects resource
 
     * def id = 'ff8081819782e69e0199391b525c35c6'
 
-  Scenario: get by post- update
+  Scenario:  post- update--get by id
     # GET by ID
     #Given path 'objects', id
     #When method get
