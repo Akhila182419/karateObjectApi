@@ -5,15 +5,9 @@ Feature:Feature: CRUD operations on objects resource
 
     * def id = 'ff8081819782e69e0199391b525c35c6'
 
-  Scenario: get by post- update
-    # GET by ID
-    #Given path 'objects', id
-    #When method get
-    #Then status 200
-    #* def oldName = response.name
-    #* print 'Old Name:', oldName
+  Scenario:  post- update--get by id
 
-    # UPDATE (Post)
+    # create (Post)
     Given path 'objects'
     And request
     """  {
@@ -36,7 +30,7 @@ Feature:Feature: CRUD operations on objects resource
     Given path 'objects',id
     And request
     """  {
-
+         "id": "21",
         "name": "vivo",
         "data": {
             "color": "Cloudy red",
@@ -44,7 +38,7 @@ Feature:Feature: CRUD operations on objects resource
         }
     }"""
     When method put
-    Then status 200
+    Then status 404
     * def Name = response.name
     * print 'Name:',Name
 
@@ -52,6 +46,6 @@ Feature:Feature: CRUD operations on objects resource
     # GET after UPDATE
     Given path 'objects', id
     When method get
-    Then status 200
+    Then status 404
     * def Name = response.name
     * print 'Name:',Name

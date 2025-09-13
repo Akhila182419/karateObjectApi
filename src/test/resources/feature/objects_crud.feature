@@ -15,7 +15,7 @@ Feature:Feature: CRUD operations on objects resource
     * def id = response.id
 
    # GET by ID
-    Given path 'objects', id
+    Given path 'objects',id
     When method get
     Then status 200
     And match response.name == name
