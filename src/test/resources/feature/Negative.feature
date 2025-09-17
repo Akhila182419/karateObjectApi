@@ -3,7 +3,6 @@ Feature: Negative Testing for User API
   Background:
     * url baseUrl
 
-
   Scenario: Get user with invalid ID
     Given path 'object', 'abc'
     When method get
