@@ -3,8 +3,6 @@ Feature:Feature: CRUD operations on objects resource
   Background:
     * url baseUrl
 
-    * def id = 'ff8081819782e69e0199391b525c35c6'
-
   Scenario:  post- update--get by id
 
     # create (Post)
@@ -12,34 +10,35 @@ Feature:Feature: CRUD operations on objects resource
     And request
 
     """  {
-        "id": "20",
-        "name": "Pixel 6 Pro",
+        "name": "iphone",
         "data": {
-            "color": "Cloudy red",
-            "capacity": "128 GB"
+            "color": "Cloudy white",
+            "capacity": "132 GB"
         }
     }"""
     When method post
-    * def name = response.name
     Then status 200
+    And def schemas = read('classpath:schema/User-Schema.json')
+    And match response  == schemas
     * def Name = response.name
     * print 'Name:',Name
-    And match response.name == name
-
+    * def id = response.id
 
    # UPDATE (PUT)
     Given path 'objects',id
     And request
-    """  {
-         "id": "21",
-        "name": "vivo",
+    """   {
+        "name": "iphone",
         "data": {
-            "color": "Cloudy red",
-            "capacity": "128 GB"
+            "color": "Cloudy white",
+            "capacity": "132 GB",
+            "model":"2025"
         }
     }"""
     When method put
-    Then status 404
+    Then status 200
+    And def schemas = read('classpath:schema/Update-Schema.json')
+    And match response  == schemas
     * def Name = response.name
     * print 'Name:',Name
 
@@ -47,6 +46,6 @@ Feature:Feature: CRUD operations on objects resource
     # GET after UPDATE
     Given path 'objects', id
     When method get
-    Then status 404
+    Then status 200
     * def Name = response.name
     * print 'Name:',Name

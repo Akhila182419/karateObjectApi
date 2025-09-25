@@ -12,7 +12,7 @@ Feature: RESTful Objects API
     * print response
 
 
-  @positive@regression @post
+  @positive @regression @post
   Scenario: Create a valid object
     Given path 'objects'
     And request

@@ -3,21 +3,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
-  <artifactId>karate-crud</artifactId>
+  <artifactId>karate-crud-restful</artifactId>
   <version>1.0-SNAPSHOT</version>
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
   </properties>
   <dependencies>
+
     <dependency>
-      <groupId>com.intuit.karate</groupId>
+      <groupId>io.karatelabs</groupId>
       <artifactId>karate-junit5</artifactId>
-      <version>1.4.1</version>
+      <version>1.5.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
+
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -25,24 +27,6 @@
         <version>3.2.5</version>
       </plugin>
 
-      <plugin>
-        <groupId>com.intuit.karate</groupId>
-        <artifactId>karate-maven-plugin</artifactId>
-        <version>1.4.1</version>
-        <configuration>
-          <tags>~@ignore</tags>
-          <systemProperties>
-            <karate.env>dev</karate.env>
-          </systemProperties>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>test</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 </project>

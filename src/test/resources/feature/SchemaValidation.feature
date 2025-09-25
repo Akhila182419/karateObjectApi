@@ -9,7 +9,6 @@ Feature: API Schema Validation
     Given path 'objects'
     And request
     """  {
-        "id": "21",
         "name": "Pixel 8 Pro",
         "data": {
             "color": "Cloudy brown",
@@ -18,10 +17,9 @@ Feature: API Schema Validation
         }
     }"""
     When method post
-    * def name = response.name
     Then status 200
-    * def Name = response.name
-    And match response.name == name
+    And def schema = read('classpath:schema/User-Schema.json')
+    And match response  == schema
     * def id = response.id
 
       # get by id/

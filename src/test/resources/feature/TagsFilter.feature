@@ -2,45 +2,111 @@ Feature:Test CRUD operations on objects endpoint
 
   Background:
     * url baseUrl
-  *  def id = '1'
+  *  def id = 'ff8081819782e69e01997f2caabd2c80'
 
-  @regression @post
-  Scenario: create /post
+  @smoke
+  Scenario:Get by id
+    Given path 'objects', id
+    When method get
+    Then status 200
+    And def schemas = read('classpath:schema/Normal -getby id.json')
+    And match response  == schemas
+
+@crud
+  Scenario:  Create - read-update - delete
      # create (Post)/Create User Schema
     Given path 'objects'
     And request
     """  {
-        "id": "21",
-        "name": "Pixel 8 Pro",
+        "name": "Pixel 9 Pro",
         "data": {
             "color": "Cloudy brown",
-            "capacity": "128 GB",
-            "model": "123.54"
+            "capacity": "132 GB"
+
         }
     }"""
     When method post
-    * def name = response.name
     Then status 200
-    * def Name = response.name
-    And match response.name == name
-    * def id = response.id
-
-@get
-  Scenario: Get object by id
+    And def schemas = read('classpath:schema/User-Schema.json')
+  And match response  == schemas
+      #Get object by id
     Given path 'objects', id
     When method get
     Then status 200
     * def Name = response.name
     * print 'Name:',Name
 
-  @regression @cleanup
-  Scenario:object cleanup
+   # UPDATE (PUT)
+  Given path 'objects',id
+  And request
+    """  {
+
+        "name": "hp laptop",
+        "data": {
+            "color": " red",
+            "capacity": "138 GB"
+        }
+    }"""
+  When method put
+  Then status 200
+  And def schemas = read('classpath:schema/Update-Schema.json')
+  And match response  == schemas
+       #delete
     Given path 'objects' ,id
     When method delete
     Then status 405
 
-  @regression @delete
-  Scenario:object delete
+@update
+   Scenario:Create - put - patch - delete
+  Scenario:  Create - read - delete
+     # create (Post)/Create User Schema
+    Given path 'objects'
+    And request
+    """  {
+        "name": "dell laptop",
+        "data": {
+            "color": " brown and red",
+            "capacity": "164 GB"
+
+        }
+    }"""
+    When method post
+    Then status 200
+    And def schemas = read('classpath:schema/User-Schema.json')
+    And match response  == schemas
+      # UPDATE (PUT)
+    Given path 'objects',id
+    And request
+    """  {
+        "name": "dell laptop",
+        "data": {
+            "color": " brown and red",
+            "capacity": "164 GB",
+            "processer":"i5"
+
+        }
+    }"""
+    When method put
+    Then status 200
+    And def schemas = read('classpath:schema/Update-Schema.json')
+    And match response  == schemas
+      # Edit (PATCH)
+    Given path 'objects',id
+    And request
+    """  {
+        "name": "dell laptop",
+        "data": {
+            "color": " brown and red",
+            "capacity": "164 GB",
+            "processer":"i5",
+           "model":"2025"
+        }
+    }"""
+    When method patch
+    Then status 200
+    And def schemas = read('classpath:schema/Update-Schema.json')
+    And match response  == schemas
+       #delete
     Given path 'objects' ,id
     When method delete
     Then status 405

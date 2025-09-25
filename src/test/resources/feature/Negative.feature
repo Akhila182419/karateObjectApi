@@ -9,7 +9,7 @@ Feature: Negative Testing for User API
     Then status 404
     * def error =
     """{
-  "error": "Oject with id=abc was not found."
+  "error": "Object with id=abc was not found."
   }"""
     And match response contains { error: "#string"}
 
@@ -36,7 +36,6 @@ Feature: Negative Testing for User API
     And request
       """
       {
-      "id":9787,
         "name": vivo pro,
        "data": {
             "color": "Cloudy brown",

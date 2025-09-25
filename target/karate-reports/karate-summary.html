@@ -9,21 +9,7 @@
     <script type="text/javascript" src="res/jquery.min.js"></script>
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
-    <script type="text/javascript" src="res/karate-report.js"></script>
-    <script>
-!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
-  api_host:'https://app.posthog.com',
-  persistence:'localStorage',
-  autocapture:false,
-  capture_pageview:false,
-  api_transport:'sendBeacon',
-  loaded: function(posthog) { 
-    posthog.capture("report_summary",{distinct_id:"fc456d83-5e88-486a-8229-d54c32364236",karate_version:"1.4.1",karate_meta:null});
-  }
-});
-</script>
-
+    <script type="text/javascript" src="res/karate-report.js"></script>    
     <title>Karate Summary Report</title>
   </head>
   <body>
@@ -36,8 +22,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">6</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">5</div>
     </div>
   </div>
   <div id="nav-env">
@@ -47,7 +33,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Features</div>
   </div>
   <div id="nav-date">
-    <div>2025-09-17 09:31:55 pm</div>
+    <div>2025-09-25 01:49:53 pm</div>
   </div>
 </div>
 
@@ -69,15 +55,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             </tr>
           </thead>
           <tbody>
-            <tr class="passed">
+            <tr class="failed">
               <td>
                 <a href="feature.data_driven.html">feature/data_driven.feature</a>
               </td>
               <td>RESTful Objects API</td>
+              <td class="num">1</td>
+              <td class="num">6</td>
               <td class="num">7</td>
-              <td class="num">0</td>
-              <td class="num">7</td>
-              <td class="num">4598</td>
+              <td class="num">3429</td>
             </tr>
             <tr class="passed">
               <td>
@@ -87,47 +73,47 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               <td class="num">3</td>
               <td class="num">0</td>
               <td class="num">3</td>
-              <td class="num">814</td>
+              <td class="num">955</td>
             </tr>
-            <tr class="passed">
+            <tr class="failed">
               <td>
                 <a href="feature.object1.html">feature/object1.feature</a>
               </td>
               <td>Feature: CRUD operations on objects resource</td>
-              <td class="num">1</td>
               <td class="num">0</td>
               <td class="num">1</td>
-              <td class="num">2366</td>
+              <td class="num">1</td>
+              <td class="num">245</td>
             </tr>
-            <tr class="passed">
+            <tr class="failed">
               <td>
                 <a href="feature.objects_crud.html">feature/objects_crud.feature</a>
               </td>
               <td>Feature: CRUD operations on objects resource</td>
-              <td class="num">1</td>
               <td class="num">0</td>
               <td class="num">1</td>
-              <td class="num">1767</td>
+              <td class="num">1</td>
+              <td class="num">247</td>
             </tr>
-            <tr class="passed">
+            <tr class="failed">
               <td>
                 <a href="feature.SchemaValidation.html">feature/SchemaValidation.feature</a>
               </td>
               <td>API Schema Validation</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
               <td class="num">2</td>
-              <td class="num">0</td>
-              <td class="num">2</td>
-              <td class="num">2295</td>
+              <td class="num">513</td>
             </tr>
-            <tr class="passed">
+            <tr class="failed">
               <td>
                 <a href="feature.TagsFilter.html">feature/TagsFilter.feature</a>
               </td>
               <td>Test CRUD operations on objects endpoint</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
               <td class="num">4</td>
-              <td class="num">0</td>
-              <td class="num">4</td>
-              <td class="num">1932</td>
+              <td class="num">778</td>
             </tr>
           </tbody>
         </table>
