@@ -2,7 +2,7 @@ Feature:Test CRUD operations on objects endpoint
 
   Background:
     * url baseUrl
-  *  def id = 'ff8081819782e69e01997f2caabd2c80'
+    * def id ='1'
 
   @smoke
   Scenario:Get by id
@@ -29,6 +29,8 @@ Feature:Test CRUD operations on objects endpoint
     Then status 200
     And def schemas = read('classpath:schema/User-Schema.json')
   And match response  == schemas
+  * def id = response.id
+
       #Get object by id
     Given path 'objects', id
     When method get
@@ -51,14 +53,17 @@ Feature:Test CRUD operations on objects endpoint
   Then status 200
   And def schemas = read('classpath:schema/Update-Schema.json')
   And match response  == schemas
-       #delete
-    Given path 'objects' ,id
-    When method delete
-    Then status 405
 
-@update
+       #delete
+    Given path 'objects',id
+    When method delete
+    Then status 200
+
+
+
+  @update
    Scenario:Create - put - patch - delete
-  Scenario:  Create - read - delete
+
      # create (Post)/Create User Schema
     Given path 'objects'
     And request
@@ -74,7 +79,9 @@ Feature:Test CRUD operations on objects endpoint
     Then status 200
     And def schemas = read('classpath:schema/User-Schema.json')
     And match response  == schemas
-      # UPDATE (PUT)
+    * def id = response.id
+
+        # UPDATE (PUT)
     Given path 'objects',id
     And request
     """  {
@@ -90,6 +97,8 @@ Feature:Test CRUD operations on objects endpoint
     Then status 200
     And def schemas = read('classpath:schema/Update-Schema.json')
     And match response  == schemas
+    * def id = response.id
+
       # Edit (PATCH)
     Given path 'objects',id
     And request

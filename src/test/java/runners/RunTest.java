@@ -31,8 +31,8 @@ public class RunTest {
     @Test
     void runUpdateTests() {
         Runner.path("classpath:features")
-                .tags("@update")
-                .parallel(5);
+                .tags("@update");
+               // .parallel(5);
     }
 
     @Test

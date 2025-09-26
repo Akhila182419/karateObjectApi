@@ -43,6 +43,7 @@ Feature:Feature: CRUD operations on objects resource
     * print 'Name:',Name
 
 
+
     # GET after UPDATE
     Given path 'objects', id
     When method get
