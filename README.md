@@ -57,8 +57,11 @@ Make sure the following are installed:
 5. How to Run Tests
 
 🔹 Run All Tests
+
 mvn clean test
+
 🔹 Run by Tag
+
 Run only scenarios tagged with @crud:
 mvn test -Dkarate.options="--tags @crud"
 Multiple tags:
@@ -84,8 +87,11 @@ o	-Dkarate.options="--tags @crud"--- Enter
 7. Tags Used
 
 •	@crud → CRUD flow tests
+
 •	@schema → Schema validation tests
+
 •	@negative → Invalid input/error cases
+
 •	@dataDriven → Data-driven tests
 
 
