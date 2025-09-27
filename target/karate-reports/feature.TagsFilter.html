@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">3</div>
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,18 +49,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-09-26 10:53:40 am</div>
+    <div>2025-09-27 08:32:32 am</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:7]"><span>[1:7]</span> <span>create--Get by id</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[2:34]"><span>[2:34]</span> <span>Create - read-update - delete</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[3:81]"><span>[3:81]</span> <span>Create - put - patch - delete</span></a>
           </div>
         </div>
@@ -86,8 +86,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>251</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>433</span>
             </div>
           </div>
           <div class="step-row">
@@ -119,7 +119,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">10:53:39.777 Running in environment: dev 
+  <div class="preformatted" data-parent="0.4">08:32:30.036 Running in environment: dev 
 </div>   
 
   
@@ -208,7 +208,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">250</div>
+    <div class="time-cell passed">209</div>
   </div>
 
    
@@ -217,7 +217,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.19">10:53:39.780 request:
+  <div class="preformatted" data-parent="0.19">08:32:30.036 request:
 1 &gt; POST https://api.restful-api.dev/objects
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 78
@@ -227,22 +227,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Dell LAPTOP Pro&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy white&quot;,&quot;capacity&quot;:&quot;168 GB&quot;}}
 
-10:53:40.027 response time in milliseconds: 245
-1 &lt; 405
-1 &lt; Date: Fri, 26 Sep 2025 05:47:31 GMT
+08:32:30.249 response time in milliseconds: 213
+1 &lt; 200
+1 &lt; Date: Sat, 27 Sep 2025 03:00:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=BEYIHD2SEvf0n0r3ZfS8bkhQtprdb07ZFXj06DhercXdgaGOTcueShtwEEuVojgQIL1cTxUG%2BenDILJcqUecziz1J%2B4%2B17XrzZOpFZNnX3%2BdKWA%3D&quot;}]}
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
 1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; cf-cache-status: DYNAMIC
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=kEabtl4qKsIsDCHtebbTNtxszSWbqtgMf0cNvurzPNNnIAIz0zO9KmY5WbDYKWWT%2BVZvPZxzjn4E7UXGWwFybxWkJSyeQ0F3JIj%2B%2B7CTyjtzcvM%3D&quot;}]}
-1 &lt; CF-RAY: 9850779189df47c1-BOM
+1 &lt; CF-RAY: 9857c0ab7fdec91f-COK
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-{&quot;error&quot;:&quot;We are very sorry but you reached your limit of requests per day. Our current limit is equal to 100 requests per day. The reason for that is the fact that servers cost money and 200 requests per user per day is all that we can afford at the moment. Tomorrow the limit will reset and you will be able to continue. Thanks and have a good day!&quot;}
+{&quot;id&quot;:&quot;ff8081819782e69e0199891da78050d0&quot;,&quot;name&quot;:&quot;Dell LAPTOP Pro&quot;,&quot;createdAt&quot;:&quot;2025-09-27T03:00:46.080+00:00&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy white&quot;,&quot;capacity&quot;:&quot;168 GB&quot;}}
 
 </div>   
 
@@ -257,13 +257,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.20">
-      <div class="step-ref failed">20</div>
+      <div class="step-ref passed">20</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -272,12 +272,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.20">10:53:40.029 classpath:feature/TagsFilter.feature:20
-Then status 200
-status code was: 405, expected: 200, response time in milliseconds: 245, url: https://api.restful-api.dev/objects, response: 
-{&quot;error&quot;:&quot;We are very sorry but you reached your limit of requests per day. Our current limit is equal to 100 requests per day. The reason for that is the fact that servers cost money and 200 requests per user per day is all that we can afford at the moment. Tomorrow the limit will reset and you will be able to continue. Thanks and have a good day!&quot;}
-classpath:feature/TagsFilter.feature:20
-</div>   
+     
 
   
 
@@ -290,13 +285,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.21">
-      <div class="step-ref skipped">21</div>
+      <div class="step-ref passed">21</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>def schemas = read(&#39;classpath:schema/User-Schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -318,13 +313,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.22">
-      <div class="step-ref skipped">22</div>
+      <div class="step-ref passed">22</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response  == schemas</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -346,13 +341,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.23">
-      <div class="step-ref skipped">23</div>
+      <div class="step-ref passed">23</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def id = response.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -381,13 +376,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.26">
-      <div class="step-ref skipped">26</div>
+      <div class="step-ref passed">26</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;objects&#39;, id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -409,13 +404,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.27">
-      <div class="step-ref skipped">27</div>
+      <div class="step-ref passed">27</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">217</div>
   </div>
 
    
@@ -424,7 +419,32 @@ classpath:feature/TagsFilter.feature:20
 
   
 
-     
+  <div class="preformatted" data-parent="0.27">08:32:30.249 request:
+2 &gt; GET https://api.restful-api.dev/objects/ff8081819782e69e0199891da78050d0
+2 &gt; Host: api.restful-api.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+08:32:30.473 response time in milliseconds: 224
+2 &lt; 200
+2 &lt; Date: Sat, 27 Sep 2025 03:00:46 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Server: cloudflare
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=UcUugJc5%2BqCg41RtLW62VkvNvbRhpo0ed%2Fm1lM26sA4TSMkGYWcIjU6IewoTHroDWPHzdhs2dPM6MdZRcAJF1q%2BHTQsaZ8snU9zyS5MlHF2CUWk%3D&quot;}]}
+2 &lt; CF-RAY: 9857c0accaa41191-COK
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:&quot;ff8081819782e69e0199891da78050d0&quot;,&quot;name&quot;:&quot;Dell LAPTOP Pro&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy white&quot;,&quot;capacity&quot;:&quot;168 GB&quot;}}
+
+</div>   
 
   
 
@@ -437,13 +457,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.28">
-      <div class="step-ref skipped">28</div>
+      <div class="step-ref passed">28</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -465,13 +485,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.29">
-      <div class="step-ref skipped">29</div>
+      <div class="step-ref passed">29</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>def schemas = read(&#39;classpath:schema/Normal -getby id.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -493,13 +513,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.30">
-      <div class="step-ref skipped">30</div>
+      <div class="step-ref passed">30</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response  == schemas</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -527,8 +547,8 @@ classpath:feature/TagsFilter.feature:20
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>230</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>836</span>
             </div>
           </div>
           <div class="step-row">
@@ -560,7 +580,7 @@ classpath:feature/TagsFilter.feature:20
 
   
 
-  <div class="preformatted" data-parent="0.4">10:53:40.050 Running in environment: dev 
+  <div class="preformatted" data-parent="0.4">08:32:30.482 Running in environment: dev 
 </div>   
 
   
@@ -615,7 +635,7 @@ classpath:feature/TagsFilter.feature:20
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -649,7 +669,7 @@ classpath:feature/TagsFilter.feature:20
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">229</div>
+    <div class="time-cell passed">220</div>
   </div>
 
    
@@ -658,7 +678,7 @@ classpath:feature/TagsFilter.feature:20
 
   
 
-  <div class="preformatted" data-parent="0.46">10:53:40.057 request:
+  <div class="preformatted" data-parent="0.46">08:32:30.482 request:
 1 &gt; POST https://api.restful-api.dev/objects
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 74
@@ -668,22 +688,22 @@ classpath:feature/TagsFilter.feature:20
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Pixel 9 Pro&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy brown&quot;,&quot;capacity&quot;:&quot;132 GB&quot;}}
 
-10:53:40.280 response time in milliseconds: 221
-1 &lt; 405
-1 &lt; Date: Fri, 26 Sep 2025 05:47:31 GMT
+08:32:30.702 response time in milliseconds: 205
+1 &lt; 200
+1 &lt; Date: Sat, 27 Sep 2025 03:00:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=rPDk4lvTmv%2FJsD7lgYbCKjwBF5j2sLTPoB%2BOhur1b%2Fwv5oNroRCnH7W%2B2Uf%2FeXIzNq2J%2Fjc9mcY7VL%2FHOohivaToLvA75repyKEiCtWK6vv%2FJfw%3D&quot;}]}
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
 1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; cf-cache-status: DYNAMIC
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=TPyWJ0fzD2epV4jJGgVExaHaEzI0tLMxmYSTeRVmNTugYvt7qXyGsDkSh%2Fr0mY5W0sAb9EJA76pR%2BYux4DvYKJAf8HhPXRlusHyXzImGodzv9Us%3D&quot;}]}
-1 &lt; CF-RAY: 985077932ff3118e-COK
+1 &lt; CF-RAY: 9857c0ae391ac91f-COK
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-{&quot;error&quot;:&quot;We are very sorry but you reached your limit of requests per day. Our current limit is equal to 100 requests per day. The reason for that is the fact that servers cost money and 200 requests per user per day is all that we can afford at the moment. Tomorrow the limit will reset and you will be able to continue. Thanks and have a good day!&quot;}
+{&quot;id&quot;:&quot;ff8081819782e69e0199891da94150d1&quot;,&quot;name&quot;:&quot;Pixel 9 Pro&quot;,&quot;createdAt&quot;:&quot;2025-09-27T03:00:46.530+00:00&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy brown&quot;,&quot;capacity&quot;:&quot;132 GB&quot;}}
 
 </div>   
 
@@ -698,13 +718,13 @@ classpath:feature/TagsFilter.feature:20
 
   <div class="step-row">
     <div class="step-container" id="0.47">
-      <div class="step-ref failed">47</div>
+      <div class="step-ref passed">47</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -713,12 +733,7 @@ classpath:feature/TagsFilter.feature:20
 
   
 
-  <div class="preformatted" data-parent="0.47">10:53:40.283 classpath:feature/TagsFilter.feature:47
-Then status 200
-status code was: 405, expected: 200, response time in milliseconds: 221, url: https://api.restful-api.dev/objects, response: 
-{&quot;error&quot;:&quot;We are very sorry but you reached your limit of requests per day. Our current limit is equal to 100 requests per day. The reason for that is the fact that servers cost money and 200 requests per user per day is all that we can afford at the moment. Tomorrow the limit will reset and you will be able to continue. Thanks and have a good day!&quot;}
-classpath:feature/TagsFilter.feature:47
-</div>   
+     
 
   
 
@@ -731,13 +746,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.48">
-      <div class="step-ref skipped">48</div>
+      <div class="step-ref passed">48</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>def schemas = read(&#39;classpath:schema/User-Schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -759,13 +774,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.49">
-      <div class="step-ref skipped">49</div>
+      <div class="step-ref passed">49</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response  == schemas</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -787,13 +802,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.50">
-      <div class="step-ref skipped">50</div>
+      <div class="step-ref passed">50</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def id = response.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -822,13 +837,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.53">
-      <div class="step-ref skipped">53</div>
+      <div class="step-ref passed">53</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;objects&#39;, id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -850,13 +865,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.54">
-      <div class="step-ref skipped">54</div>
+      <div class="step-ref passed">54</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">217</div>
   </div>
 
    
@@ -865,7 +880,32 @@ classpath:feature/TagsFilter.feature:47
 
   
 
-     
+  <div class="preformatted" data-parent="0.54">08:32:30.705 request:
+2 &gt; GET https://api.restful-api.dev/objects/ff8081819782e69e0199891da94150d1
+2 &gt; Host: api.restful-api.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+08:32:30.908 response time in milliseconds: 203
+2 &lt; 200
+2 &lt; Date: Sat, 27 Sep 2025 03:00:46 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Server: cloudflare
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=IF7LffXzFIBGK6tO3eg%2FYVjZNThdOXj4h43uiDX%2FGWkczrAdW79fNOMxj2mQViqOiVpicU2Hk10OtTxAiF%2BGemJKQBJnIH6rzJ9gt2y55s%2Fe380%3D&quot;}]}
+2 &lt; CF-RAY: 9857c0af8d151191-COK
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:&quot;ff8081819782e69e0199891da94150d1&quot;,&quot;name&quot;:&quot;Pixel 9 Pro&quot;,&quot;data&quot;:{&quot;color&quot;:&quot;Cloudy brown&quot;,&quot;capacity&quot;:&quot;132 GB&quot;}}
+
+</div>   
 
   
 
@@ -878,13 +918,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.55">
-      <div class="step-ref skipped">55</div>
+      <div class="step-ref passed">55</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -906,13 +946,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.56">
-      <div class="step-ref skipped">56</div>
+      <div class="step-ref passed">56</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def Name = response.name</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -934,13 +974,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.57">
-      <div class="step-ref skipped">57</div>
+      <div class="step-ref passed">57</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print &#39;Name:&#39;,Name</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -949,7 +989,8 @@ classpath:feature/TagsFilter.feature:47
 
   
 
-     
+  <div class="preformatted" data-parent="0.57">08:32:30.922 [print] Name: Pixel 9 Pro 
+</div>   
 
   
 
@@ -969,13 +1010,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.60">
-      <div class="step-ref skipped">60</div>
+      <div class="step-ref passed">60</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;objects&#39;,id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -997,13 +1038,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.61">
-      <div class="step-ref skipped">61</div>
+      <div class="step-ref passed">61</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1031,13 +1072,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.70">
-      <div class="step-ref skipped">70</div>
+      <div class="step-ref passed">70</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">194</div>
   </div>
 
    
@@ -1046,7 +1087,34 @@ classpath:feature/TagsFilter.feature:47
 
   
 
-     
+  <div class="preformatted" data-parent="0.70">08:32:30.924 request:
+3 &gt; PUT https://api.restful-api.dev/objects/ff8081819782e69e0199891da94150d1
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 64
+3 &gt; Host: api.restful-api.dev
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;hp laptop&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; red&quot;,&quot;capacity&quot;:&quot;138 GB&quot;}}
+
+08:32:31.116 response time in milliseconds: 191
+3 &lt; 200
+3 &lt; Date: Sat, 27 Sep 2025 03:00:46 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Server: cloudflare
+3 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+3 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=kCEuV4oLE9cdfFeAaIdHY8qhJ5T%2Foisf9E47b077AjaczQLFQ8G%2B%2BU2a6c3fDM%2B%2FAh%2FfBxg418nysEhPa0f90Ou%2B5PJMuaz4%2FdS1pIcZgBGuLIs%3D&quot;}]}
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; cf-cache-status: DYNAMIC
+3 &lt; CF-RAY: 9857c0b0eda51190-COK
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:&quot;ff8081819782e69e0199891da94150d1&quot;,&quot;name&quot;:&quot;hp laptop&quot;,&quot;updatedAt&quot;:&quot;2025-09-27T03:00:46.940+00:00&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; red&quot;,&quot;capacity&quot;:&quot;138 GB&quot;}}
+
+</div>   
 
   
 
@@ -1059,13 +1127,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.71">
-      <div class="step-ref skipped">71</div>
+      <div class="step-ref passed">71</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1087,13 +1155,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.72">
-      <div class="step-ref skipped">72</div>
+      <div class="step-ref passed">72</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>def schemas = read(&#39;classpath:schema/Update-Schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1115,13 +1183,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.73">
-      <div class="step-ref skipped">73</div>
+      <div class="step-ref passed">73</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response  == schemas</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1150,13 +1218,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.76">
-      <div class="step-ref skipped">76</div>
+      <div class="step-ref passed">76</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;objects&#39;,id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1178,13 +1246,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.77">
-      <div class="step-ref skipped">77</div>
+      <div class="step-ref passed">77</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">201</div>
   </div>
 
    
@@ -1193,7 +1261,32 @@ classpath:feature/TagsFilter.feature:47
 
   
 
-     
+  <div class="preformatted" data-parent="0.77">08:32:31.120 request:
+4 &gt; DELETE https://api.restful-api.dev/objects/ff8081819782e69e0199891da94150d1
+4 &gt; Host: api.restful-api.dev
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+08:32:31.317 response time in milliseconds: 197
+4 &lt; 200
+4 &lt; Date: Sat, 27 Sep 2025 03:00:47 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Server: cloudflare
+4 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+4 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=2D75%2BBy%2BesEDFQcJo1Os2MKzDfYRK2TiWqbhHwBF%2BbG4oKBQYOETmNZlUpzoWNQzPva3v8kv2meNoSN0XIkDlzDvtJP2J0R0NM7wCZA6nuPjxeY%3D&quot;}]}
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; cf-cache-status: DYNAMIC
+4 &lt; CF-RAY: 9857c0b22a80118e-COK
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;message&quot;:&quot;Object with id = ff8081819782e69e0199891da94150d1 has been deleted.&quot;}
+
+</div>   
 
   
 
@@ -1206,13 +1299,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.78">
-      <div class="step-ref skipped">78</div>
+      <div class="step-ref passed">78</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1240,8 +1333,8 @@ classpath:feature/TagsFilter.feature:47
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>285</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>972</span>
             </div>
           </div>
           <div class="step-row">
@@ -1273,7 +1366,7 @@ classpath:feature/TagsFilter.feature:47
 
   
 
-  <div class="preformatted" data-parent="0.4">10:53:40.326 Running in environment: dev 
+  <div class="preformatted" data-parent="0.4">08:32:31.333 Running in environment: dev 
 </div>   
 
   
@@ -1362,7 +1455,7 @@ classpath:feature/TagsFilter.feature:47
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">285</div>
+    <div class="time-cell passed">193</div>
   </div>
 
    
@@ -1371,7 +1464,7 @@ classpath:feature/TagsFilter.feature:47
 
   
 
-  <div class="preformatted" data-parent="0.94">10:53:40.330 request:
+  <div class="preformatted" data-parent="0.94">08:32:31.338 request:
 1 &gt; POST https://api.restful-api.dev/objects
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 76
@@ -1381,22 +1474,22 @@ classpath:feature/TagsFilter.feature:47
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;dell laptop&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; brown and red&quot;,&quot;capacity&quot;:&quot;164 GB&quot;}}
 
-10:53:40.612 response time in milliseconds: 280
-1 &lt; 405
-1 &lt; Date: Fri, 26 Sep 2025 05:47:32 GMT
+08:32:31.523 response time in milliseconds: 185
+1 &lt; 200
+1 &lt; Date: Sat, 27 Sep 2025 03:00:47 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=vMKsY8oWslqzIht9sF%2FGlZOB1gxHGnKF08ZKJHxW4VhEpOth43%2FEXWocGejGaypAR2oThwLd%2FMFplW%2B7aCkDtF6%2Fi%2B1xoRqYKCWmsJRkHdf8EJo%3D&quot;}]}
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
 1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; cf-cache-status: DYNAMIC
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=IrpLPHwcv1nyb7%2B36DSh59FLUCH1F3vra22BbSQV%2FTckFW6WVnbO8M1q80K%2BQvFiZjhrF89AcpHUCx1tNrSX%2F3Sk4HbnfjILgz73ZjWe7pmnoWo%3D&quot;}]}
-1 &lt; CF-RAY: 985077950ec985b4-BOM
+1 &lt; CF-RAY: 9857c0b378651191-COK
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-{&quot;error&quot;:&quot;We are very sorry but you reached your limit of requests per day. Our current limit is equal to 100 requests per day. The reason for that is the fact that servers cost money and 200 requests per user per day is all that we can afford at the moment. Tomorrow the limit will reset and you will be able to continue. Thanks and have a good day!&quot;}
+{&quot;id&quot;:&quot;ff8081819782e69e0199891dac7b50d2&quot;,&quot;name&quot;:&quot;dell laptop&quot;,&quot;createdAt&quot;:&quot;2025-09-27T03:00:47.355+00:00&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; brown and red&quot;,&quot;capacity&quot;:&quot;164 GB&quot;}}
 
 </div>   
 
@@ -1411,13 +1504,13 @@ classpath:feature/TagsFilter.feature:47
 
   <div class="step-row">
     <div class="step-container" id="0.95">
-      <div class="step-ref failed">95</div>
+      <div class="step-ref passed">95</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1426,12 +1519,7 @@ classpath:feature/TagsFilter.feature:47
 
   
 
-  <div class="preformatted" data-parent="0.95">10:53:40.614 classpath:feature/TagsFilter.feature:95
-Then status 200
-status code was: 405, expected: 200, response time in milliseconds: 280, url: https://api.restful-api.dev/objects, response: 
-{&quot;error&quot;:&quot;We are very sorry but you reached your limit of requests per day. Our current limit is equal to 100 requests per day. The reason for that is the fact that servers cost money and 200 requests per user per day is all that we can afford at the moment. Tomorrow the limit will reset and you will be able to continue. Thanks and have a good day!&quot;}
-classpath:feature/TagsFilter.feature:95
-</div>   
+     
 
   
 
@@ -1444,13 +1532,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.96">
-      <div class="step-ref skipped">96</div>
+      <div class="step-ref passed">96</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>def schemas = read(&#39;classpath:schema/User-Schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1472,13 +1560,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.97">
-      <div class="step-ref skipped">97</div>
+      <div class="step-ref passed">97</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response  == schemas</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1500,13 +1588,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.98">
-      <div class="step-ref skipped">98</div>
+      <div class="step-ref passed">98</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def id = response.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1535,13 +1623,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.101">
-      <div class="step-ref skipped">101</div>
+      <div class="step-ref passed">101</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;objects&#39;,id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1563,13 +1651,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.102">
-      <div class="step-ref skipped">102</div>
+      <div class="step-ref passed">102</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1598,13 +1686,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.112">
-      <div class="step-ref skipped">112</div>
+      <div class="step-ref passed">112</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">218</div>
   </div>
 
    
@@ -1613,7 +1701,34 @@ classpath:feature/TagsFilter.feature:95
 
   
 
-     
+  <div class="preformatted" data-parent="0.112">08:32:31.529 request:
+2 &gt; PUT https://api.restful-api.dev/objects/ff8081819782e69e0199891dac7b50d2
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 93
+2 &gt; Host: api.restful-api.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;dell laptop&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; brown and red&quot;,&quot;capacity&quot;:&quot;164 GB&quot;,&quot;processer&quot;:&quot;i5&quot;}}
+
+08:32:31.744 response time in milliseconds: 215
+2 &lt; 200
+2 &lt; Date: Sat, 27 Sep 2025 03:00:47 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Server: cloudflare
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=%2BbPw%2FAm%2FwPiRQJqei6QhKxlL%2B6defsKvEyxPJyB4hf%2FP%2BSYhVSBDku%2BJz%2BnsoETDMC%2B9Raebn0iJDJotHe2FYlLAN75XIIznuH1rPJDNL6HCads%3D&quot;}]}
+2 &lt; CF-RAY: 9857c0b4b9b01190-COK
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:&quot;ff8081819782e69e0199891dac7b50d2&quot;,&quot;name&quot;:&quot;dell laptop&quot;,&quot;updatedAt&quot;:&quot;2025-09-27T03:00:47.568+00:00&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; brown and red&quot;,&quot;capacity&quot;:&quot;164 GB&quot;,&quot;processer&quot;:&quot;i5&quot;}}
+
+</div>   
 
   
 
@@ -1626,13 +1741,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.113">
-      <div class="step-ref skipped">113</div>
+      <div class="step-ref passed">113</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1654,13 +1769,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.114">
-      <div class="step-ref skipped">114</div>
+      <div class="step-ref passed">114</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>def schemas = read(&#39;classpath:schema/Update-Schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1682,13 +1797,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.115">
-      <div class="step-ref skipped">115</div>
+      <div class="step-ref passed">115</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response  == schemas</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1710,13 +1825,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.116">
-      <div class="step-ref skipped">116</div>
+      <div class="step-ref passed">116</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def id = response.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1745,13 +1860,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.119">
-      <div class="step-ref skipped">119</div>
+      <div class="step-ref passed">119</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;objects&#39;,id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1773,13 +1888,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.120">
-      <div class="step-ref skipped">120</div>
+      <div class="step-ref passed">120</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1809,13 +1924,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.130">
-      <div class="step-ref skipped">130</div>
+      <div class="step-ref passed">130</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method patch</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">237</div>
   </div>
 
    
@@ -1824,7 +1939,34 @@ classpath:feature/TagsFilter.feature:95
 
   
 
-     
+  <div class="preformatted" data-parent="0.130">08:32:31.754 request:
+3 &gt; PATCH https://api.restful-api.dev/objects/ff8081819782e69e0199891dac7b50d2
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 108
+3 &gt; Host: api.restful-api.dev
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;dell laptop&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; brown and red&quot;,&quot;capacity&quot;:&quot;164 GB&quot;,&quot;processer&quot;:&quot;i5&quot;,&quot;model&quot;:&quot;2025&quot;}}
+
+08:32:31.983 response time in milliseconds: 229
+3 &lt; 200
+3 &lt; Date: Sat, 27 Sep 2025 03:00:47 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Server: cloudflare
+3 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+3 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=TUscmU1aOXB9GYEVWnyOqjxYuLTedYAkJF3oOUKHP71vLn8qdcZDpxecwjtK3vD9b3wiNlgAsZF4Oc68b%2FzKrBWFYWrlWVwfeLB0oYrvXG9ZDzM%3D&quot;}]}
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; cf-cache-status: DYNAMIC
+3 &lt; CF-RAY: 9857c0b62d51c91f-COK
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:&quot;ff8081819782e69e0199891dac7b50d2&quot;,&quot;name&quot;:&quot;dell laptop&quot;,&quot;updatedAt&quot;:&quot;2025-09-27T03:00:47.806+00:00&quot;,&quot;data&quot;:{&quot;color&quot;:&quot; brown and red&quot;,&quot;capacity&quot;:&quot;164 GB&quot;,&quot;processer&quot;:&quot;i5&quot;,&quot;model&quot;:&quot;2025&quot;}}
+
+</div>   
 
   
 
@@ -1837,13 +1979,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.131">
-      <div class="step-ref skipped">131</div>
+      <div class="step-ref passed">131</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1865,13 +2007,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.132">
-      <div class="step-ref skipped">132</div>
+      <div class="step-ref passed">132</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>def schemas = read(&#39;classpath:schema/Update-Schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1893,13 +2035,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.133">
-      <div class="step-ref skipped">133</div>
+      <div class="step-ref passed">133</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response  == schemas</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1928,13 +2070,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.135">
-      <div class="step-ref skipped">135</div>
+      <div class="step-ref passed">135</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;objects&#39; ,id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1956,13 +2098,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.136">
-      <div class="step-ref skipped">136</div>
+      <div class="step-ref passed">136</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">316</div>
   </div>
 
    
@@ -1971,7 +2113,32 @@ classpath:feature/TagsFilter.feature:95
 
   
 
-     
+  <div class="preformatted" data-parent="0.136">08:32:31.992 request:
+4 &gt; DELETE https://api.restful-api.dev/objects/ff8081819782e69e0199891dac7b50d2
+4 &gt; Host: api.restful-api.dev
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+08:32:32.299 response time in milliseconds: 307
+4 &lt; 200
+4 &lt; Date: Sat, 27 Sep 2025 03:00:48 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Server: cloudflare
+4 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; cf-cache-status: DYNAMIC
+4 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=2fNPJSo4B669rKLEAv5FCcKBJQBmumHTOzuK4FTCLf9b38UjyCLXbjneIw3gXa1VUVMys4W%2BTJ%2FedWt53VaHGbfHM8nuExQ6rKv4XkjZdCnOsy4%3D&quot;}]}
+4 &lt; CF-RAY: 9857c0b79bf61191-COK
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;message&quot;:&quot;Object with id = ff8081819782e69e0199891dac7b50d2 has been deleted.&quot;}
+
+</div>   
 
   
 
@@ -1984,13 +2151,13 @@ classpath:feature/TagsFilter.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.137">
-      <div class="step-ref skipped">137</div>
+      <div class="step-ref passed">137</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    

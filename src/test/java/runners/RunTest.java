@@ -34,6 +34,12 @@ public class RunTest {
                 .tags("@update");
                // .parallel(5);
     }
+    @Test
+    void runDataDrivenTests() {
+        Runner.path("classpath:features")
+                .tags("@dataDriven");
+        // .parallel(5);
+    }
 
     @Test
     void runAllTagsTogether() {
