@@ -16,9 +16,13 @@ It provides hands-on practice in end-to-end API test automation using Karate DSL
 2. Prerequisites
 
 Make sure the following are installed:
+
 •	Java 21
+
 •	Maven 4.0.0
+
 •	IDE -IntelliJ IDEA 
+
 3. Project Overview
 
 •	Test Framework: Karate (with JUnit 5)
@@ -55,11 +59,8 @@ Make sure the following are installed:
    └── .idea / External Libraries    # IDE-specific files (IntelliJ)
 
 5. How to Run Tests
-
 🔹 Run All Tests
-
 mvn clean test
-
 🔹 Run by Tag
 
 Run only scenarios tagged with @crud:
@@ -78,20 +79,22 @@ mvn clean test -Dthreads=5
 6. Running from IntelliJ
 
 •	Open Run class/Debug Configurations → Add new JUnit run configuration
+
 •	Point it to your Karate runner class or a specific .feature file
+
 •	To apply tags in IntelliJ:
+
 o	Maven Execute maven Goal( vedio icon)command type( mvn………..)
+
 o	-Dkarate.options="--tags @crud"--- Enter
+
 •	You can right-click any .feature file or scenario → Run directly
 
 7. Tags Used
 
 •	@crud → CRUD flow tests
-
 •	@schema → Schema validation tests
-
 •	@negative → Invalid input/error cases
-
 •	@dataDriven → Data-driven tests
 
 
